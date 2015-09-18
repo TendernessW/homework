@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<!--省市联动的部分 -->
+    <LinearLayout 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+         
+        <Spinner
+                android:id="@+id/sp_province"
+                android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+        />
+        <Spinner
+                android:id="@+id/sp_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+        <Spinner
+                android:id="@+id/sp_district"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+        
+        
+        
+    </LinearLayout>
+    <!-- 天气详情部分-->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff38f7ff"
+            >
+        <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                />
+         <TextView
+                 android:id="@+id/weather_state"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="晴"
+                 android:layout_marginLeft="20dp"
+                 android:layout_toRightOf="@id/weather_icon"
+                 android:layout_alignTop="@id/weather_icon"
+       />
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
